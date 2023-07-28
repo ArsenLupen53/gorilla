@@ -1,0 +1,289 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #333;
+}
+
+
+/* Basic styling for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  nav ul li a:hover{
+    color:#9c9898
+  }
+  
+  /* Styling for the entrance section */
+  #entrance {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  /* Styling for the facts section */
+  #facts {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  
+  /* Styling for the types section */
+  #types {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  /* Styling for the photos section */
+  #photos {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  
+  /* Basic styling for the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+
+
+/*Arranging header section*/
+
+
+
+/*Arranging entrance section*/
+
+#entrance{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.entrence-text {
+  width:500px;
+}
+
+.entrence-image{
+  display: flex;
+  align-items: center;
+}
+.entrence-image > img{
+  max-width:600px;
+  max-height:400px;
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+
+/*Arranging facts section*/
+
+#facts > h2 {
+    text-align: center;
+}
+
+.factos {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+}
+
+.factos > .fact > img {
+  height:200px;
+  width:250px;
+  border-radius: 15%;
+  object-fit: cover;
+  border: 2px solid #000 ;
+}
+
+.factos > .fact {
+  width:350px;
+  height:400px;
+  text-align: center;
+  
+}
+
+
+/*Arranging types section*/
+#types > h2 {
+    text-align: center;
+}
+
+
+/*Styling West*/
+.west{
+  padding-left: 30px;
+}
+
+.west-gorilla{
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.west-gorilla > h3{
+  margin-left: -10px ;
+}
+
+.gorilla-information-west{
+  display: flex;
+  gap:30px;
+  align-items: center;
+}
+
+.img-west > img{
+  width:100%;
+  height:100%;
+  max-width: 600px;
+  max-height: 400px;
+
+}
+
+
+
+/*Styling East*/
+
+.east{
+  display: flex;
+  padding-right:30px;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: end;
+}
+
+.east-gorilla{
+  padding-right:50px;
+  padding-left:50px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.east-gorilla > h3{
+  margin-right: -10px ;
+}
+
+.gorilla-information-east{
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap:30px;
+}
+
+@media (max-width:1118px){
+  .gorilla-information-west , .gorilla-information-east {
+    flex-wrap: wrap;
+  }
+
+  .img-east , .img-west {
+    width:100%;
+    height:100%;
+  }
+}
+
+.img-east , .img-west {
+  width:100%;
+} 
+
+.img-east > img{
+  height:100%;
+  width:100%;
+  max-width: 600px;
+  max-height: 400px;
+  
+}
+
+
+
+/*Arranging photos section*/
+#photos > h2 {
+    text-align: center;
+}
+
+
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+
+}
+
+.photos > img{
+  width:100%;
+  height:100%;
+}
+
+@media (min-width:850px) {
+  .photos > img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*styling border*/
+
+.border{
+  display: flex;
+  justify-content: center;
+}
+
+.big-border{
+  width:80%;
+  height:7px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.small-border{
+  width:80%;
+  height:5px;
+  background-color: black;
+}
+
+
+
