@@ -18,18 +18,31 @@ header {
   
   header h1 {
     margin: 0;
+    padding-bottom: 20px;
   }
   
   nav ul {
     list-style: none;
     padding: 0;
   }
+
   
   nav ul li {
     display: inline-block;
     margin: 0 10px;
   }
-  
+
+  @media (max-width:400px) {
+    nav ul li {
+      margin:15px;
+    }
+  }
+  @media (max-width:514px) {
+    nav ul li {
+      margin-bottom:13px;
+    }
+  }
+
   nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -256,6 +269,14 @@ header {
   .photos > img {
     width: 50%;
     height: 50%;
+  }
+
+}
+
+@media (max-width:850px) {
+  .east {
+    text-align: start;
+    padding-left: 30px;
   }
 }
 
